@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+}
+
+.container {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e8e0;
+}
+
+.url-loader {
+    margin-top: 2rem;
+}
