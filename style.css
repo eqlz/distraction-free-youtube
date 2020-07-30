@@ -1,5 +1,6 @@
 body, html {
     height: 100%;
+    background-color: #c3e5d3;
 }
 
 .container {
@@ -9,7 +10,10 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #e7e8e0;
+}
+
+iframe {
+    border-radius: 0.25rem;
 }
 
 .url-loader {
