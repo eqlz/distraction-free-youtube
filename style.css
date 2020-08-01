@@ -12,9 +12,38 @@ body, html {
 }
 
 iframe {
+    width: 60%;
+    height: 63%;
     border-radius: 0.25rem;
 }
 
-.url-loader {
+.url-loader-container {
     margin-top: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input.url-input-box {
+    width: 40%;
+    height: 1.6rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+button.load-video-button {
+    color: #fff;
+    line-height: 1.5;
+    background-color: #87ceeb;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin: 10px;
 }
