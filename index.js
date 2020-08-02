@@ -18,19 +18,22 @@ const playButtonEle = document.getElementById("play-button");
 
 playButtonEle.addEventListener("click", () => {
     const videoUrl = document.getElementById("video-url").value;
-    const videoId = getVideoIdFromUrl(videoUrl);
-    const parametersList = [
-        {
-            key: 'playlist',
-            value: videoId,
-        },
-        {
-            key: 'loop',
-            value: 1,
-        }
-    ];
-    const embeddedVideoUrl = BASE_URL + videoId + '?' + getParams(parametersList);
 
-    const iframeEle = document.getElementById("yt-player");
-    iframeEle.setAttribute("src", embeddedVideoUrl);
+    if (!!videoUrl) {
+        const videoId = getVideoIdFromUrl(videoUrl);
+        const parametersList = [
+            {
+                key: 'playlist',
+                value: videoId,
+            },
+            {
+                key: 'loop',
+                value: 1,
+            }
+        ];
+        const embeddedVideoUrl = BASE_URL + videoId + '?' + getParams(parametersList);
+
+        const iframeEle = document.getElementById("yt-player");
+        iframeEle.setAttribute("src", embeddedVideoUrl);
+    }
 });
