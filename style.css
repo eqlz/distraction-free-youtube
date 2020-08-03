@@ -47,3 +47,10 @@ button.load-video-button {
     border-radius: 0.25rem;
     margin: 10px;
 }
+
+span.author {
+    margin-top: 2rem;
+    font-family:  "Arial";
+    font-weight: 400;
+    color: #495057;
+}
